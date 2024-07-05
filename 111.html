@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Service Business</title>
+    <style>
+        /* Global styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            padding: 1em 0;
+            text-align: center;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            background-color: #444;
+        }
+        header nav ul li a:hover {
+            background-color: #555;
+        }
+        .hero {
+            background-image: url('https://miro.medium.com/v2/resize:fit:828/format:webp/1*GX4364pHORmXrP_b9H01gQ.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero-content button {
+            padding: 1em 2em;
+            font-size: 1.2em;
+            background-color: #ff6600;
+            border: none;
+            cursor: pointer;
+        }
+        .hero-content button:hover {
+            background-color: #ff4500;
+        }
+        .what-we-do {
+            background-image: url('path/to/dollar-background.jpg');
+            background-size: cover;
+            text-align: center;
+            padding: 2em 0;
+        }
+        .services, .contact-us, .footer-content {
+            padding: 2em;
+            text-align: center;
+        }
+        .services .service {
+            display: inline-block;
+            width: 30%;
+            vertical-align: top;
+            padding: 1em;
+        }
+        .contact-us form input, .contact-us form textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 1em;
+            padding: 1em;
+        }
+        .contact-us form input[type="submit"] {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-us form input[type="submit"]:hover {
+            background-color: #ff4500;
+        }
+        .footer-content .footer-column {
+            display: inline-block;
+            width: 30%;
+            vertical-align: top;
+            padding: 1em;
+        }
+        .footer-content .footer-column a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-content .footer-column a:hover {
+            text-decoration: underline;
+        }
+        /* Scroll Up Button */
+        .scroll-up {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 0.5em 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollUpButton = document.getElementById('scrollUp');
+            if (window.scrollY > 200) {
+                scrollUpButton.style.display = 'block';
+            } else {
+                scrollUpButton.style.display = 'none';
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Secure money transfers            </h1>
+            <h3>We provide a range of personal currency exchange services that are designed to make your life easier.</h3>
+
+            <button>Register Now</button>
+        </div>
+    </section>
+
+    <section class="what-we-do">
+        <div class="content">
+            <h2>The best exchange rate
+            </h2>
+            <p>Prime Vex Currency Exchange, with many years of experience in Exchanging services, is one of the most trusted currency exchanges in Canada. Our Customers can always be sure to get a better rate from us. Prime Vex Currency Exchange does its best to provide services for clients at no service fee.
+            </p>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service" style="background-color: #f0f0f0;">
+            <h3>Save Time
+            </h3>
+            <p>With Prime Vex Currency Exchange services you can be sure to get the fastest and the best quality of services. Online services such as checking the rates from the website, free online sign-up, and membership, and also fill up all of the online forms, can help our customers to get services without to be in person.
+
+            </p>
+        </div>
+        <div class="service" style="background-color: #d0d0d0;">
+            <h3>Save Time
+
+
+            </h3>
+            <p>With Prime Vex Currency Exchange services you can be sure to get the fastest and the best quality of services. Online services such as checking the rates from the website, free online sign-up, and membership, and also fill up all of the online forms, can help our customers to get services without to be in person.
+
+
+            </p>
+        </div>
+        <div class="service" style="background-color: #b0b0b0;">
+            <h3>Different payment methods</h3>
+            <p>The main objective of Prime Vex Currency Exchange is to provide the fastest and most secure services for clients. Due to worldwide money transfer services, Prime Vex has different methods of payment such as POS, Cash, and E-transfer. Our goal is to create a new level of experience in money exchange services for our customers.
+
+            </p>
+        </div>
+    </section>
+    <section class="what-we-do">
+
+        <div class="content">
+            <h2>Currency Exchange
+            </h2>
+            <h3>Services
+            </h3>
+            <p>
+            </p>
+        </div>
+    </section>
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <p>© 2024 Money Service Business</p>
+            </div>
+            <div class="footer-column">
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-column">
+                <p>Contact: your-email@example.com</p>
+                <p>Phone: +1-234-567-890</p>
+                <a href="https://wa.me/1234567890" target="_blank">Chat with us on WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollUp" class="scroll-up" onclick="scrollToTop()">Up</button>
+</body>
+</html>
